@@ -48,14 +48,43 @@ nav .login-btn {
 
 .search-section {
   width: 100%;
+  text-align: center;
 }
 
 .search-form {
   max-width: 100%;
 }
 
+
+.search-input {
+  text-align: center;
+}
+
 .search-input input {
+  max-width: 560px;
   width: 70%;
+  margin-bottom: 25px;
+  height: 42px; 
+  border-radius: 2px;
+  padding: 0 10px;
+  border: 1px solid #d2d2d2;
+}
+
+.submit-btns button {
+  border: 0;
+  padding: 7.5px 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  margin: 0 5px;
+  font-weight: bold;
+  background: #f2f2f2;
+  color: #757575;
+}
+
+.submit-btns button:hover {
+  color: black;
+  border: 1px solid #d2d2d2;
+  box-shadow: 0 0 2px 2px #e3e3e3;
 }
 
 footer {
