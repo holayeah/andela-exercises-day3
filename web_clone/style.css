@@ -39,6 +39,11 @@ nav .login-btn {
   line-height: 28px;
 }
 
+
+.logo {
+  margin-bottom: 35px;
+}
+
 .search-container {
   display: flex;
   align-items: center;
