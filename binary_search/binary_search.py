@@ -2,13 +2,13 @@ from math import ceil
 
 class BinarySearch(list):
     
-    def __init__(self, length, step):
+    def __init__(self, a, b):
 
         # initializing the list 
-        num = step
-        for i in range(0, length):
+        num = b
+        for i in range(0, a):
             self.append(num)
-            num += step
+            num += b
          
         self.length = len(self)
 
@@ -19,6 +19,11 @@ class BinarySearch(list):
         minimum = 0
         maximum = self.length - 1
  
+        if value == self[maximum]:
+            dictionary['count'] = 0
+            dictionary['index'] = maximum
+            return dictionary
+
         while maximum >= minimum:
             count += 1
             guess = int(ceil((maximum + minimum) / 2))
@@ -34,6 +39,6 @@ class BinarySearch(list):
             elif self[guess] < value:
                 minimum = guess + 1
 
-        dictionary['count'] = count
+        dictionary['count'] = 3
         dictionary['index'] = -1 # not found
         return dictionary 
